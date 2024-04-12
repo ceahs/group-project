@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML form">
+    <meta name="keywords" content="HTML, Form, tags">
+    <meta name="author" content="Hasan Gohar">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Apply for jobs</title>
+    <link href="/stylesheet/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link visually-hidden" href="#main_content">Skip to main content</a>
+    <div class="navbar">
+        <div class="navbar_logo">
+            <img src="stylesheet/images/NeuraAI updated.png" alt="logo" class="logo">
+            <h1>NeuraAI</h1>
+        </div>
+    
+        <div class="navbar_links">
+            <a href="index.html">
+                <h3>Home</h3>
+            </a>
+            <a href="about.html">
+                <h3>About</h3>
+            </a>
+            
+            <a href="jobs.html">
+                <h3>Services</h3>
+            </a>
+        </div>
+
+        <div class="navbar_button">
+            <a href="apply.html"> <button class="btn">  Apply Now</button> </a>
+        </div>
+
+
+    </div>
+    <h1><strong>Employment Application</strong></h1>
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        
+        <div class="apply-field">
+            <fieldset>
+                <legend>Applicant Details</legend>   
+                
+                    <label for="job_reference_number">Job Reference Number</label>
+                    <input type="text" name="job_reference_number" id="job_reference_number" pattern="[A-Za-z0-9]{5}" required="required"><br>
+
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" maxlength="20" required="required" >
+
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" maxlength="20" required="required" ><br>
+
+                    <label for="birth_date">Birth Date</label> 
+                    <input type="text" name="birth_date" id="birth_date" placeholder="mm/dd/yyyy" pattern="\d{2}\/\d{2}\/\d{4}" required="required">
+                    
+                    
+                    <h2>Gender</h2><br>
+                    <input type="radio" name="gender" id="male" value="male" required="required">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">Other</label><br>
+            
+                
+            </fieldset>
+        </div>
+
+        <div class="apply-field">
+            <fieldset>
+                <legend>Address</legend>
+
+                <label for="street_address">Street Address</label>
+                <input type="text" name="street_address" id="street_address" maxlength="40" required="required"><br>
+
+                <label for="suburb_town">Suburb/Town</label>
+                <input type="text" name="suburb_town" id="suburb_town" maxlength="40" required="required"><br>
+
+                <label for="state">State</label>
+                <select name="state" id="state" required="required">
+                    <option value="">Please Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select> 
+
+                <label for="postcode">Postal Code</label>
+                <input type="text" name="postcode" id="postcode" pattern="[0-9]{4}" required="required">
+            </fieldset>
+        </div>
+
+        <div class="apply-field">
+            <fieldset>
+                <legend>Positions to Apply for</legend>
+                <select name="position" id="position" required="required">
+                    <option value="">Please Select</option>
+                    <option value="AI Developers">AI Developers</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="Website Developers">Website Developers</option>
+                    <option value="Testing Team Members">Testing Team Members</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+
+                <label for="email_address">Email Address</label>
+                <input type="email" name="email_address" id="email_address" required="required">
+
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{8,12}" required="required"><br>
+
+                <label for="skill_list">Skill List</label>
+                <select name="skill_list" id="skill_list" required="required">
+                    <option value="">Please Select</option>
+                    <option value="Database Management">Database Management</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Networking">Networking</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Data Analysis">Data Analysis</option>
+                    <option value="Machine Learning/Artificial Intelligence">Machine Learning/Artificial Intelligence</option>
+                    <option value="Operating Systems">Operating Systems</option>
+                    <option value="Communication">Communication</option>
+                    <option value="Problem-Solving">Problem-Solving</option>
+                    <option value="Critical Thinking">Critical Thinking</option>
+                    <option value="Adaptability">Adaptability</option>
+                    <option value="Teamwork">Teamwork</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <p>
+                    <label for="other_skills">Other Skills</label><br>
+                    <textarea name="other_skills" id="other_skills" rows="4" cols="25" placeholder="Write other skills you have"></textarea>
+                </p>
+            </fieldset>
+        </div>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    <div class="footer_above_line"></div>
+    <div class="footer">
+        <div class="footer_logo">
+            <img src="stylesheet/images/NeuraAI updated.png" alt="logo" class="logo">
+            <h2>NeuraAI</h2>
+            <p>We Craft Innovation, We Craft Ideas </p>
+        </div>
+        <div class="footer_middle">
+            <h3>Quick Links</h3>
+            <div class="footer_links_container">
+
+                <div class="footer_links">
+                    <a href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <a href="about.html">
+                        <p>About</p>
+                    </a>
+                    <a href="apply.html">
+                        <p>Contact</p>
+                    </a>
+                    <a href="jobs.html">
+                        <p>Services</p>
+                    </a>
+                </div>
+                <div class="footer_links">
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Business</p>
+                    </a>
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Consultation</p>
+                    </a>
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Collaboration</p>
+                    </a>
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Codebase</p>
+                    </a>
+                </div>
+                <div class="footer_links">
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Social Media</p>
+                    </a>
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Marketing</p>
+                    </a>
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Digital Assets</p>
+                    </a>
+                    <a href="https://www.swinburne.edu.au">
+                        <p>Financial Aspects</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_right">
+            <h3>Subscribe to our newsletter</h3>
+            <div class="input-group">
+                <input type="email" class="footer-input" id="Email" name="Email" placeholder="Enter your email" autocomplete="off">
+                <button class="btn4">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2021 [Company Name]. All rights reserved.</p>
+    </div>
+</body>
+</html>
